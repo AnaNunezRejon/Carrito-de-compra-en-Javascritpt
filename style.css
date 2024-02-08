@@ -1,0 +1,208 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+p a{
+    display: inline;
+}
+
+img, video, iframe, picture, figure{
+    max-width: 100%;
+    display: block;
+}
+form, input, select, textarea, button, label{
+    font-family: inherit; /* que lo herede del padre*/
+    font-size: inherit;
+    display: block;
+    color: inherit;
+    border: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+:root {
+    --rosa: #fd2b7c;
+    --rosa-clarito:rgb(255, 230, 240);
+    --morado: #5c106b;
+}
+
+/* ESTILOS MENU NAVEGACIÓN Y CABECERA DE LA WEB */
+
+.logo{
+    color: var(--rosa);
+}
+.layout__menu{
+    padding-right: 15%;
+    padding-left: 15%;
+    border-bottom: 1px solid var(--rosa);
+}
+.menu__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo{
+    width: 185px;
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav__item{
+    position: relative;
+    margin: 0 1rem;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+.nav__title{
+    font-size: large;
+    line-height: 6rem;
+    transition: all 300ms ease-in-out;
+}
+.nav__title:hover{
+    color: var(--rosa);
+}
+.nav__title:hover::before{ 
+    width: 100%;
+    opacity: 1s;
+}
+.nav__title-carrito{
+    font-weight: bold;
+    color: var(--rosa);
+}
+.nav__title-carrito:hover{
+    color: var(--morado);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 4rem;
+}
+.contenedor__carrito{
+    display: block;
+    flex-direction: column;
+    border: 1px solid var(--rosa-clarito);
+    width: 50%;
+    padding: 1.5rem;
+    padding-left: 5rem;
+}
+.carrito__cabecera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--rosa-clarito);
+}
+.cabecera__titulos{
+    align-items: center;
+}
+.cabecera__cantidad{
+    align-items: center;
+}
+.carrito__productos{
+    display: block;
+    border-bottom: 1px solid var(--rosa-clarito);
+}
+.productos__producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem 0;
+}
+.producto__referencia{
+    font-size: x-small;
+}
+.producto__botones{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.cantidad{
+    text-align: center;
+    color: var(--rosa);
+    border: 1px solid var(--rosa);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    height: 40px;
+    width: 20%;
+    min-width: 2rem;
+}
+.boton__restar,
+.boton__sumar{
+    background-color: var(--rosa);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+.boton__restar:hover,
+.boton__sumar:hover{
+    background-color: var(--morado);
+    color: white;
+}
+.contenedor__aside{
+    display: block;
+    background-color: var(--rosa-clarito);
+    padding: 1rem;
+}
+.aside__titulo{
+    padding-bottom: 2rem;
+}
+.aside__contenido{
+    display: inline-block;
+    padding-bottom: 1rem;
+    width: 250px;
+    justify-content: space-between;
+}
+.aside__contenido--contenedor{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+.total__total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    gap: 2rem;
+    border-top: 1px solid var(--rosa);
+}
+.total__precio{
+    font-size: larger;
+}
