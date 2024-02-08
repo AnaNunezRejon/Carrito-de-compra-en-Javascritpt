@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="layout__menu">
+        <header class="menu__navbar">
+            <!--logo-->
+            <div class="navbar__logo">
+                    <h1 class="logo">DeliciaDesign</h1>
+            </div>
+
+            <!--Navegacion-->
+            
+            <nav id="nav" class="navbar__nav">   
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Tienda</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Accesorios</a>
+                    </li>
+                   
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Soporte</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title nav__title-carrito">Carrito</a>
+                    </li>
+                </ul>
+             </nav>
+        </header>
+    </section>
+
+    <div class="wrapper">
+        <main class="contenedor__carrito">
+            <div class="carrito__cabecera">
+                <div class="cabecera__titulos">Producto</div>
+                <div class="cabecera__titulos">Cantidad</div>
+                <div class="cabecera__titulos">Unidad</div>
+                <div class="cabecera__titulos">Total</div>
+            </div>
+            <section id="carrito__productos" class="carrito__productos">
+                <!-- aside incluido con js-->
+            </section>
+        </main>
+
+        <aside class="contenedor__aside">
+            <div class="aside__titulo"><strong>Total</strong></div>
+            <div id="aside__contenido" class="aside__contenido">
+                
+            </div>
+            <div class="total__total">
+                <div class="total__titulo">
+                    <strong>Total</strong>
+                </div>
+                <div id="total__precio" class="total__precio">
+                    <strong></strong>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="./carrito.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
